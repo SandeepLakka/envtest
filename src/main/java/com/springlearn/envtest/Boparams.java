@@ -1,29 +1,29 @@
 package com.springlearn.envtest;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-import java.io.Serializable;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
+@Table
 @Data
-@IdClass(Boparams.PKClass.class)
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class Boparams {
 
     @Id
     String name_;
-    @Id
+
     String value_;
 
     @Column(nullable = true)
-    private char secured_ = 'N';
-
-    @Data
-    @NoArgsConstructor
-    public static class PKClass implements Serializable {
-        String name_;
-        String value_;
-    }
+    private boolean secured_ = false;
 
 }
