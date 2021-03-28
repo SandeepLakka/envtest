@@ -1,5 +1,6 @@
-package com.springlearn.envtest;
+package com.springlearn.envtest.init;
 
+import com.springlearn.envtest.model.Boparams;
 import com.zaxxer.hikari.HikariDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

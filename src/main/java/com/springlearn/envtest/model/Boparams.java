@@ -1,4 +1,4 @@
-package com.springlearn.envtest;
+package com.springlearn.envtest.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "BOPARAMS")
 @Data
 @Builder
 @NoArgsConstructor

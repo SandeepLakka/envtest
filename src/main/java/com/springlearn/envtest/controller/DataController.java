@@ -1,7 +1,7 @@
 package com.springlearn.envtest.controller;
 
-import com.springlearn.envtest.BOparamsRepository;
-import com.springlearn.envtest.Boparams;
+import com.springlearn.envtest.model.Boparams;
+import com.springlearn.envtest.repository.BOparamsRepository;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.properties.ConfigurationProperties;
